@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./MenuWac.css";
 
 import Item from "./Item.js";
 import datas from "./../datas/menu.json"
 
 function MenuWac() {
+
+    const [selected, setSelected] = useState(-1);
+
+    function test() {
+        console.log("Test");
+    }
+
     return (
         <div className="menuWac">
             <h1>Hey,</h1>
@@ -12,7 +19,7 @@ function MenuWac() {
             <div className="itemList">
                 {datas.map(
                     (elem , index) => (
-                    <Item name={elem.name} image={elem.icon} promo={elem.promo} key={index}/>
+                    <Item name={elem.name} image={elem.icon} promo={elem.promo} key={index} index={index} onClick={setSelected} selected={selected}/>
                     )
                 )}
             </div>

@@ -1,10 +1,18 @@
 import React from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar.js';
+import MenuWac from './components/MenuWac.js';
 
 function App() {
   return (
     <div className="App">
-      <p>App</p>
+      <div className="TopDiv">
+        <p>Logo</p>
+      </div>
+      <div className="MainDiv">
+        <MenuWac/>
+        <Sidebar/>
+      </div>
     </div>
   );
 }

@@ -9,13 +9,12 @@ function App() {
       <div className="TopDiv">
         <div className="topDivImages">
           <img src="logo.PNG" alt="logo" className="logoWac"/>
-          <img src="usa.png" alt="usa" className="usaFlag"/>
         </div>
       </div>
       <div className="MainDiv">
         <MenuWac/>
-        <Sidebar/>
       </div>
+      <Sidebar/>
     </div>
   );
 }

@@ -8,10 +8,6 @@ function MenuWac() {
 
     const [selected, setSelected] = useState(-1);
 
-    function test() {
-        console.log("Test");
-    }
-
     return (
         <div className="menuWac">
             <h1>Hey,</h1>
